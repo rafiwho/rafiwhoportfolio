@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Uodoy Hossan Rafi - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',    // Bright Blue
+            secondary: '#0891b2',  // Cyan
+            accent: '#6366f1',     // Indigo
+            background: '#f8fafc', // Light Gray
+            text: '#1e293b',       // Slate Gray
+            'text-light': '#64748b' // Light Text
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'spin-slow': 'spin 20s linear infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            tilt: {
+              '0%, 100%': { transform: 'rotate(-3deg)' },
+              '50%': { transform: 'rotate(3deg)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --color-primary: #3B82F6;
+      --color-secondary: #10B981;
+      --color-background: #f8fafc;
+      --color-card: #ffffff;
+      --color-text: #1e293b;
+      --color-text-light: #64748b;
+      --color-border: #e2e8f0;
+      --color-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .section {
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-text {
+      background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hover-scale {
+      transition: all 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .glass-effect {
+      background: var(--color-card);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--color-border);
+      border-radius: 15px;
+    }
+
+    .skill-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+      color: var(--color-text);
+      position: relative;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--color-primary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: var(--color-primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .section {
+      padding: 5rem 0;
+      background: var(--color-background);
+    }
+
+    .section:nth-child(even) {
+      background: var(--color-card);
+    }
+
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--color-primary);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transition: all 0.1s ease;
+      transform: translate(-50%, -50%);
+    }
+
+    .custom-cursor-dot {
+      width: 4px;
+      height: 4px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transition: all 0.15s ease-out;
+      transform: translate(-50%, -50%);
+    }
+
+    .button {
+      background: var(--color-primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: var(--color-secondary);
+      transform: translateY(-2px);
+    }
+
+    .card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress"></div>
+
+  <!-- Include Navigation -->
+  <div id="navigation"></div>
+
+  <!-- Include Hero Section -->
+  <div id="hero"></div>
+
+  <!-- Include Skills Section -->
+  <div id="skills"></div>
+
+  <!-- Include Projects Section -->
+  <div id="projects"></div>
+
+  <!-- Include Education Section -->
+  <div id="education"></div>
+
+  <!-- Include Achievements Section -->
+  <div id="achievements"></div>
+
+  <!-- Include Contact Section -->
+  <div id="contact"></div>
+
+  <!-- Include Footer -->
+  <div id="footer"></div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Load components
+    fetch('components/navigation.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navigation').innerHTML = data;
+      });
+
+    fetch('components/hero.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('hero').innerHTML = data;
+      });
+
+    fetch('components/skills.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('skills').innerHTML = data;
+      });
+
+    fetch('components/projects.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('projects').innerHTML = data;
+      });
+
+    fetch('components/education.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('education').innerHTML = data;
+      });
+
+    fetch('components/achievements.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('achievements').innerHTML = data;
+      });
+
+    fetch('components/contact.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('contact').innerHTML = data;
+      });
+
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+</body>
+
+</html>

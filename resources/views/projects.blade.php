@@ -1,0 +1,298 @@
+<section id="projects" class="section projects-section" aria-labelledby="projects-title">
+    <div class="container">
+        <h2 class="section-title" id="projects-title" data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                <figure class="project-image">
+                    <img src="assets/images/halaldrinkingwater.png" alt="Halaal Drinking Water project screenshot">
+                    <figcaption class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://halaaldrinkingwater.vercel.app/" class="project-link" target="_blank" rel="noopener">Live Demo <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <div class="project-content">
+                    <div class="project-badge">Featured Project</div>
+                    <h3>Halaal Drinking Water</h3>
+                    <p>A premium water delivery service website with modern UI/UX design. Features include online ordering, real-time tracking, and seamless payment integration. Built with responsive design principles for optimal user experience across all devices.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Vercel</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-content">
+                    <div class="project-icon" aria-hidden="true">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Competitive Programming Solutions</h3>
+                    <p>A comprehensive collection of algorithmic solutions from various competitive programming platforms. Demonstrates expertise in data structures, algorithms, and problem-solving techniques.</p>
+                    <div class="tech-stack">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Algorithms</span>
+                    </div>
+                    <a href="https://github.com/rafiwho/Problem_solving_DART" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> View Project</a>
+                </div>
+            </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-content">
+                    <div class="project-icon" aria-hidden="true">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Application Design</h3>
+                    <p>An innovative mobile application showcasing modern UI/UX principles and efficient C++ implementation for optimal performance.</p>
+                    <div class="tech-stack">
+                        <span>C++</span>
+                        <span>UI/UX</span>
+                        <span>Mobile Dev</span>
+                    </div>
+                    <a href="https://github.com/rafiwho/Moblie-Application-Design" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> View Project</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<style>
+    .projects-section {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .projects-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
+        animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 0.5;
+        }
+
+        50% {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    .project-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        position: relative;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-image img {
+        transform: scale(1.1);
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-icon {
+        font-size: 2rem;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-icon {
+        transform: scale(1.2) rotate(5deg);
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--color-text);
+        margin-bottom: 1rem;
+    }
+
+    .project-card p {
+        color: var(--color-text-light);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .project-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        z-index: 1;
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .tech-stack span {
+        background: var(--color-card);
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.85rem;
+        color: var(--color-text);
+        border: 1px solid var(--color-border);
+        transition: all 0.3s ease;
+    }
+
+    .tech-stack span:hover {
+        background: var(--color-primary);
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .project-links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .project-link {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        background: var(--color-primary);
+        transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+        background: var(--color-secondary);
+        transform: translateY(-2px);
+    }
+
+    .project-link.github {
+        background: #24292e;
+    }
+
+    .project-link.github:hover {
+        background: #404448;
+    }
+
+    @media (max-width: 768px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .project-card.featured {
+            grid-column: auto;
+        }
+
+        .project-content {
+            padding: 1rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Add hover effect to project cards
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    });
+</script>

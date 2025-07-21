@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "echo 'No build step needed for PHP deployment'",
+        "build": "mkdir -p dist && cp -r public/* dist/ && php -f build-static.php",
         "dev": "vite"
     },
     "devDependencies": {

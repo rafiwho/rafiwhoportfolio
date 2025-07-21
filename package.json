@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "mkdir -p dist && cp -r public/* dist/ && php -f build-static.php",
+        "build": "node build.js",
         "dev": "vite"
     },
     "devDependencies": {

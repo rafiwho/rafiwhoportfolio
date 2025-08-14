@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormMail;
 
 class ContactController extends Controller
 {
@@ -28,6 +30,8 @@ class ContactController extends Controller
         $contactData['ip_address'] = $request->ip();
 
         try {
+            Mail::to('rafi-15-5494@diu.edu.bd')->send(new ContactFormMail($contactData));
+            
             return response()->json([
                 'status' => 'success',
                 'message' => 'Thank you for your message! I will get back to you soon.'

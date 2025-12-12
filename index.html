@@ -322,6 +322,87 @@
         </div>
     </footer>
 
-    <script src="script.js?v=terminal-1" defer></script>
+    <script>
+(() => {
+  const qs = (s, r=document) => r.querySelector(s);
+  const qsa = (s, r=document) => Array.from(r.querySelectorAll(s));
+
+  const toggle = qs('.nav-toggle');
+  const menu = qs('.nav-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => menu.classList.toggle('active'));
+    qsa('.nav-item').forEach((item) => item.addEventListener('click', () => menu.classList.remove('active')));
+  }
+
+  qsa('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (!href || href.length < 2) return;
+      const target = qs(href);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  const typeWriter = (el, text, speed=50) => new Promise((resolve) => {
+    let i = 0;
+    const tick = () => {
+      if (!el) return resolve();
+      if (i < text.length) {
+        el.textContent += text.charAt(i++);
+        setTimeout(tick, speed);
+      } else {
+        resolve();
+      }
+    };
+    tick();
+  });
+
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  const runTerminal = async () => {
+    const cmd1 = document.getElementById('cmd1');
+    const out1 = document.getElementById('output1');
+    const cmd2 = document.getElementById('cmd2');
+    const out2 = document.getElementById('output2');
+    const cmd3 = document.getElementById('cmd3');
+    if (!cmd1 || !out1 || !cmd2 || !out2 || !cmd3) return;
+
+    cmd1.textContent = '';
+    cmd2.textContent = '';
+    cmd3.textContent = '';
+    out1.textContent = '';
+    out2.textContent = '';
+
+    await sleep(400);
+    await typeWriter(cmd1, 'go run main.go', 70);
+    await sleep(250);
+    out1.textContent = 'Server listening on :8080
+Database connected successfully
+Worker pool initialized: 4 workers';
+
+    await sleep(700);
+    await typeWriter(cmd2, 'docker ps', 70);
+    await sleep(250);
+    out2.textContent = 'judgenot0-engine   Up 2 hours   0.0.0.0:8080->8080/tcp
+judgenot0-postgres Up 2 hours   0.0.0.0:5432->5432/tcp
+judgenot0-rabbitmq Up 2 hours   0.0.0.0:5672->5672/tcp';
+
+    await sleep(700);
+    await typeWriter(cmd3, 'git status', 70);
+  };
+
+  const start = () => {
+    if (document.getElementById('cmd1')) runTerminal();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
+  } else {
+    start();
+  }
+})();
+</script>
 </body>
 </html>

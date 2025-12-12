@@ -288,16 +288,20 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ff6b35;
-    color: white;
-    padding: 0.5rem 0.75rem;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    font-family: var(--font-sans);
-    letter-spacing: 0.05em;
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    letter-spacing: 0;
     white-space: nowrap;
     z-index: 1;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--green) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    height: 2.1rem;
+    display: flex;
+    align-items: center;
 }
 
 .hero-visual {

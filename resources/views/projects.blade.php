@@ -3,6 +3,24 @@
         <h2 class="section-title" id="projects-title" data-aos="fade-up">Featured Projects</h2>
         <div class="projects-grid">
             <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <div class="project-badge">Featured Project</div>
+                    <div class="project-icon" aria-hidden="true">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>JudgeNot0 - Online Judge System</h3>
+                    <p>A distributed online judge platform built with microservices architecture. Contributed to the backend engine and server components using Go. Features include multi-language code execution (C, C++, Python), RabbitMQ-based message queue for scalable submission processing, worker pool architecture, and Prometheus metrics. Built with PostgreSQL, Docker, and distributed system patterns.</p>
+                    <div class="tech-stack">
+                        <span>Go</span>
+                        <span>PostgreSQL</span>
+                        <span>RabbitMQ</span>
+                        <span>Docker</span>
+                        <span>Microservices</span>
+                    </div>
+                    <a href="https://github.com/cy-r0x/judgenot0" class="project-link github" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> View Project</a>
+                </div>
+            </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="150">
                 <figure class="project-image">
                     <img src="assets/images/halaldrinkingwater.png" alt="Halaal Drinking Water project screenshot">
                     <figcaption class="project-overlay">
@@ -12,7 +30,6 @@
                     </figcaption>
                 </figure>
                 <div class="project-content">
-                    <div class="project-badge">Featured Project</div>
                     <h3>Halaal Drinking Water</h3>
                     <p>A premium water delivery service website with modern UI/UX design. Features include online ordering, real-time tracking, and seamless payment integration. Built with responsive design principles for optimal user experience across all devices.</p>
                     <div class="tech-stack">
@@ -23,7 +40,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <article class="project-card" data-aos="fade-up" data-aos-delay="250">
                 <div class="project-content">
                     <div class="project-icon" aria-hidden="true">
                         <i class="fas fa-code"></i>

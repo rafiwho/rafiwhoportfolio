@@ -11,7 +11,7 @@
                 <span class="title-highlight">Crafting Digital Excellence</span>
             </h1>
             <h2 class="hero-subtitle">
-                Full-Stack Developer & Competitive Programming Expert
+                Backend Developer & Competitive Programming Expert
             </h2>
             <p class="hero-description">
                 Passionate about building scalable web applications and solving complex algorithmic challenges. 

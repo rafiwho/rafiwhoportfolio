@@ -26,10 +26,16 @@
                             <div class="progress-bar" style="width: 85%"></div>
                         </div>
                     </div>
+                    <div class="skill-tag" data-skill="Go">
+                        <span class="skill-name">Go</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 92%"></div>
+                        </div>
+                    </div>
                     <div class="skill-tag" data-skill="Java">
                         <span class="skill-name">Java</span>
                         <div class="skill-progress">
-                            <div class="progress-bar" style="width: 80%"></div>
+                            <div class="progress-bar" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
@@ -58,10 +64,16 @@
                             <div class="progress-bar" style="width: 95%"></div>
                         </div>
                     </div>
+                    <div class="skill-tag" data-skill="PostgreSQL">
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
                     <div class="skill-tag" data-skill="MongoDB">
                         <span class="skill-name">MongoDB</span>
                         <div class="skill-progress">
-                            <div class="progress-bar" style="width: 80%"></div>
+                            <div class="progress-bar" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
@@ -117,9 +129,15 @@
                         </div>
                     </div>
                     <div class="skill-tag" data-skill="Docker">
+                    <div class="skill-tag" data-skill="RabbitMQ">
+                        <span class="skill-name">RabbitMQ</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
                         <span class="skill-name">Docker</span>
                         <div class="skill-progress">
-                            <div class="progress-bar" style="width: 80%"></div>
+                            <div class="progress-bar" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>

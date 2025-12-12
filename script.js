@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    if (document.getElementById('cmd1')) {
+        runTerminalAnimation();
+    }
 });
 
 function typeWriter(element, text, speed = 50) {
@@ -63,9 +67,3 @@ async function runTerminalAnimation() {
     await new Promise(resolve => setTimeout(resolve, 800));
     await typeWriter(cmd3, 'git status', 80);
 }
-
-window.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('cmd1')) {
-        runTerminalAnimation();
-    }
-});

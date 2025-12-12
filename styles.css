@@ -248,12 +248,14 @@ a:hover {
     gap: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
+    align-items: start;
 }
 
 .hero-stat {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    align-items: flex-start;
 }
 
 .hero-stat-number {

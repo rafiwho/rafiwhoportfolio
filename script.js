@@ -67,3 +67,37 @@ async function runTerminalAnimation() {
     await new Promise(resolve => setTimeout(resolve, 800));
     await typeWriter(cmd3, 'git status', 80);
 }
+
+
+function resetTerminal() {
+  const ids = ['cmd1','cmd2','cmd3','output1','output2'];
+  for (const id of ids) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = '';
+  }
+}
+
+async function startTerminal() {
+  const cmd1 = document.getElementById('cmd1');
+  const out1 = document.getElementById('output1');
+  const cmd2 = document.getElementById('cmd2');
+  const out2 = document.getElementById('output2');
+  const cmd3 = document.getElementById('cmd3');
+  if (!cmd1 || !out1 || !cmd2 || !out2 || !cmd3) return;
+
+  resetTerminal();
+  await runTerminalAnimation();
+}
+
+function tryStartTerminal(retries = 20) {
+  if (document.getElementById('cmd1')) {
+    startTerminal();
+    return;
+  }
+  if (retries <= 0) return;
+  setTimeout(() => tryStartTerminal(retries - 1), 150);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  tryStartTerminal();
+});

@@ -378,16 +378,12 @@
     await sleep(400);
     await typeWriter(cmd1, 'go run main.go', 70);
     await sleep(250);
-    out1.textContent = 'Server listening on :8080
-Database connected successfully
-Worker pool initialized: 4 workers';
+    out1.innerHTML = 'Server listening on :8080<br>Database connected successfully<br>Worker pool initialized: 4 workers';
 
     await sleep(700);
     await typeWriter(cmd2, 'docker ps', 70);
     await sleep(250);
-    out2.textContent = 'judgenot0-engine   Up 2 hours   0.0.0.0:8080->8080/tcp
-judgenot0-postgres Up 2 hours   0.0.0.0:5432->5432/tcp
-judgenot0-rabbitmq Up 2 hours   0.0.0.0:5672->5672/tcp';
+    out2.innerHTML = 'judgenot0-engine&nbsp;&nbsp;&nbsp;Up 2 hours&nbsp;&nbsp;&nbsp;0.0.0.0:8080-&gt;8080/tcp<br>judgenot0-postgres&nbsp;Up 2 hours&nbsp;&nbsp;&nbsp;0.0.0.0:5432-&gt;5432/tcp<br>judgenot0-rabbitmq&nbsp;Up 2 hours&nbsp;&nbsp;&nbsp;0.0.0.0:5672-&gt;5672/tcp';
 
     await sleep(700);
     await typeWriter(cmd3, 'git status', 70);

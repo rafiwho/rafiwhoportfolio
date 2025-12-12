@@ -720,3 +720,29 @@ a:hover {
         min-height: 250px;
     }
 }
+
+
+/* CSS-only terminal typing (no JS needed) */
+.terminal-cmd{
+  display:inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+  width:0;
+}
+
+.terminal-out{
+  opacity:0;
+}
+
+.terminal-cmd-1{ animation: tcmd1 1.05s steps(14) forwards; }
+.terminal-out-1{ animation: tout 0.35s ease forwards; animation-delay: 1.15s; }
+
+.terminal-cmd-2{ animation: tcmd2 0.8s steps(9) forwards; animation-delay: 1.85s; }
+.terminal-out-2{ animation: tout 0.35s ease forwards; animation-delay: 2.75s; }
+
+.terminal-cmd-3{ animation: tcmd3 0.9s steps(10) forwards; animation-delay: 3.35s; }
+
+@keyframes tcmd1{ to{ width:14ch; } }
+@keyframes tcmd2{ to{ width:9ch; } }
+@keyframes tcmd3{ to{ width:10ch; } }
+@keyframes tout{ to{ opacity:1; } }

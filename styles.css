@@ -618,3 +618,105 @@ a:hover {
 .project-featured:hover {
     border-color: var(--green);
 }
+
+.terminal {
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: var(--font-mono);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header {
+    background: var(--surface);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-btn.close {
+    background: #ff5f56;
+}
+
+.terminal-btn.minimize {
+    background: #ffbd2e;
+}
+
+.terminal-btn.maximize {
+    background: #27c93f;
+}
+
+.terminal-title {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    min-height: 350px;
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+
+.terminal-line {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.terminal-prompt {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.terminal-command {
+    color: var(--text-primary);
+}
+
+.terminal-output {
+    color: var(--text-secondary);
+    margin-left: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background: var(--green);
+    margin-left: 1.75rem;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .terminal {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .terminal-body {
+        min-height: 250px;
+    }
+}

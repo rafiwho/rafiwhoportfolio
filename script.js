@@ -25,3 +25,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function typeWriter(element, text, speed = 50) {
+    let i = 0;
+    return new Promise((resolve) => {
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            } else {
+                resolve();
+            }
+        }
+        type();
+    });
+}
+
+async function runTerminalAnimation() {
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    const cmd1 = document.getElementById('cmd1');
+    const output1 = document.getElementById('output1');
+    const cmd2 = document.getElementById('cmd2');
+    const output2 = document.getElementById('output2');
+    const cmd3 = document.getElementById('cmd3');
+    
+    await typeWriter(cmd1, 'go run main.go', 80);
+    await new Promise(resolve => setTimeout(resolve, 300));
+    output1.textContent = 'Server listening on :8080\nDatabase connected successfully\nWorker pool initialized: 4 workers';
+    
+    await new Promise(resolve => setTimeout(resolve, 800));
+    await typeWriter(cmd2, 'docker ps', 80);
+    await new Promise(resolve => setTimeout(resolve, 300));
+    output2.textContent = 'judgenot0-engine   Up 2 hours   0.0.0.0:8080->8080/tcp\njudgenot0-postgres Up 2 hours   0.0.0.0:5432->5432/tcp\njudgenot0-rabbitmq Up 2 hours   0.0.0.0:5672->5672/tcp';
+    
+    await new Promise(resolve => setTimeout(resolve, 800));
+    await typeWriter(cmd3, 'git status', 80);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('cmd1')) {
+        runTerminalAnimation();
+    }
+});

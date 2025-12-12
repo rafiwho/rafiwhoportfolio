@@ -1,144 +1,95 @@
-<section class="skills-section" id="skills" aria-labelledby="skills-title">
+<section id="skills" class="skills">
     <div class="container">
-        <h2 class="section-title" id="skills-title" data-aos="fade-up">Skills & Expertise</h2>
+        <div class="section-header">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
         <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="skill-header">
-                    <i class="fas fa-code skill-icon" aria-hidden="true"></i>
-                    <h3>Programming Languages</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-tag" data-skill="C++">
+            <div class="skill-category">
+                <h3 class="skill-category-title">Languages</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
                         <span class="skill-name">C++</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 95%"></div>
-                        </div>
+                        <span class="skill-level">Expert</span>
                     </div>
-                    <div class="skill-tag" data-skill="Python">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="JavaScript">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="Go">
+                    <div class="skill-item">
                         <span class="skill-name">Go</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 92%"></div>
-                        </div>
+                        <span class="skill-level">Advanced</span>
                     </div>
-                    <div class="skill-tag" data-skill="Java">
-                        <span class="skill-name">Java</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Intermediate</span>
                     </div>
                 </div>
             </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="skill-header">
-                    <i class="fas fa-globe skill-icon" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-tag" data-skill="React.js">
-                        <span class="skill-name">React.js</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="Node.js">
-                        <span class="skill-name">Node.js</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="HTML/CSS">
-                        <span class="skill-name">HTML/CSS</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="PostgreSQL">
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Backend & Databases</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
                         <span class="skill-name">PostgreSQL</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 88%"></div>
-                        </div>
+                        <span class="skill-level">Advanced</span>
                     </div>
-                    <div class="skill-tag" data-skill="MongoDB">
-                        <span class="skill-name">MongoDB</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="skill-header">
-                    <i class="fas fa-puzzle-piece skill-icon" aria-hidden="true"></i>
-                    <h3>Problem Solving</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-tag" data-skill="Data Structures">
-                        <span class="skill-name">Data Structures</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="Algorithms">
-                        <span class="skill-name">Algorithms</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="Competitive Programming">
-                        <span class="skill-name">Competitive Programming</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="skill-header">
-                    <i class="fas fa-tools skill-icon" aria-hidden="true"></i>
-                    <h3>Tools & Technologies</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-tag" data-skill="Git">
-                        <span class="skill-name">Git</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="VS Code">
-                        <span class="skill-name">VS Code</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="Linux">
-                        <span class="skill-name">Linux</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-tag" data-skill="Docker">
-                    <div class="skill-tag" data-skill="RabbitMQ">
+                    <div class="skill-item">
                         <span class="skill-name">RabbitMQ</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 82%"></div>
-                        </div>
+                        <span class="skill-level">Advanced</span>
                     </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Tools & DevOps</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
                         <span class="skill-name">Docker</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" style="width: 85%"></div>
-                        </div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Linux</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Prometheus</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Specializations</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Data Structures</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Algorithms</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Microservices</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">System Design</span>
+                        <span class="skill-level">Advanced</span>
                     </div>
                 </div>
             </div>
@@ -147,205 +98,98 @@
 </section>
 
 <style>
-    .skills-section {
+.skills {
+    padding: 120px 0;
+    background: var(--surface);
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.skill-category {
+    padding: 2rem;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color var(--transition-base);
+}
+
+.skill-category:hover {
+    border-color: var(--accent);
+}
+
+.skill-category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.skill-level {
+    font-size: 0.875rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
         padding: 80px 0;
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .skills-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
-        animation: pulse 4s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-
-        0%,
-        100% {
-            transform: scale(1);
-            opacity: 0.5;
-        }
-
-        50% {
-            transform: scale(1.2);
-            opacity: 0.8;
-        }
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        position: relative;
-        z-index: 1;
     }
 
     .section-title {
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 3rem;
-        color: var(--color-text);
-        background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-    }
-
-    .skill-card {
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        text-align: left;
-        border: 1px solid var(--color-border);
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px var(--color-shadow);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .skill-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, transparent, rgba(37, 99, 235, 0.1));
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .skill-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px var(--color-shadow);
-    }
-
-    .skill-card:hover::before {
-        opacity: 1;
-    }
-
-    .skill-icon {
         font-size: 2rem;
-        color: var(--color-primary);
-        transition: transform 0.3s ease;
     }
 
-    .skill-card:hover .skill-icon {
-        transform: scale(1.2) rotate(5deg);
+    .skill-category {
+        padding: 1.5rem;
     }
-
-    .skill-header {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .skill-header h3 {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--color-text);
-        margin: 0;
-    }
-
-    .skill-content {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .skill-tag {
-        background: var(--color-card);
-        padding: 0.75rem 1rem;
-        border-radius: 8px;
-        border: 1px solid var(--color-border);
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .skill-tag:hover {
-        transform: translateX(5px);
-        border-color: var(--color-primary);
-    }
-
-    .skill-name {
-        display: block;
-        font-size: 0.95rem;
-        font-weight: 500;
-        color: var(--color-text);
-        margin-bottom: 0.5rem;
-    }
-
-    .skill-progress {
-        width: 100%;
-        height: 4px;
-        background: var(--color-border);
-        border-radius: 2px;
-        overflow: hidden;
-    }
-
-    .progress-bar {
-        height: 100%;
-        background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
-        border-radius: 2px;
-        transform-origin: left;
-        transform: scaleX(0);
-        transition: transform 1s ease;
-    }
-
-    .skill-tag:hover .progress-bar {
-        transform: scaleX(1);
-    }
-
-    @media (max-width: 768px) {
-        .skills-section {
-            padding: 60px 0;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .skills-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .skill-card {
-            padding: 1.5rem;
-        }
-    }
+}
 </style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Animate progress bars when they come into view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const progressBar = entry.target.querySelector('.progress-bar');
-                    progressBar.style.transform = 'scaleX(1)';
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.skill-tag').forEach(tag => {
-            observer.observe(tag);
-        });
-    });
-</script>

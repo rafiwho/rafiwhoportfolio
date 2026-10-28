@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Uodoy Hossan Rafi - Backend Developer & Competitive Programmer</title>
     <meta name="description" content="Backend Developer specializing in Go, PostgreSQL, and microservices. 3000+ problems solved in competitive programming.">
-    <link rel="stylesheet" href="styles.css?v=terminal-1">
+    <link rel="stylesheet" href="styles.css?v=portfolio-2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,17 +18,17 @@
                 <span class="nav-logo-text">rafi<span class="accent-dot">.</span></span>
             </a>
 
-            <button class="nav-toggle" aria-label="Toggle menu">
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navigation-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <div class="nav-menu">
+            <div class="nav-menu" id="navigation-menu">
                 <a href="#skills" class="nav-item">Skills</a>
                 <a href="#projects" class="nav-item">Projects</a>
                 <a href="#contact" class="nav-item">Contact</a>
-                <a href="Md_Uodoy_Hossan_Rafi_CV_Updated.pdf" target="_blank" class="nav-item nav-cta">Resume</a>
+                <a href="Md_Uodoy_Hossan_Rafi_CV_Updated.pdf" target="_blank" rel="noopener noreferrer" class="nav-item nav-cta">Resume</a>
             </div>
         </div>
     </nav>
@@ -44,33 +44,34 @@
 
                 <h1 class="hero-title">
                     <span class="hero-greeting">Hey, I'm Rafi</span>
-                    <span class="hero-main">Backend Developer &<br>Competitive Programmer</span>
+                    <span class="hero-main">I build backend<br>systems in Go.</span>
                 </h1>
 
                 <p class="hero-description">
-                    Building distributed systems and solving complex problems.
-                    Specialized in Go, PostgreSQL, and microservices architecture.
-                    3000+ problems solved across competitive programming platforms.
+                    Go, PostgreSQL, and distributed code execution.
+                    I contribute to backend systems and bring experience solving
+                    3,000+ problems across competitive programming platforms.
                 </p>
 
                 <div class="hero-actions">
                     <a href="#projects" class="hero-btn hero-btn-primary">View Work</a>
-                    <a href="#contact" class="hero-btn hero-btn-secondary">Get in Touch</a>
+                    <a href="Md_Uodoy_Hossan_Rafi_CV_Updated.pdf" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn-secondary">View Resume &#8599;</a>
+                    <a href="#contact" class="hero-contact">Get in touch &#8594;</a>
                 </div>
 
                 <div class="hero-stats">
                     <div class="hero-stat">
                         <span class="hero-stat-number">3000+</span>
-                        <span class="hero-stat-label">Problems Solved</span>
+                        <a class="hero-stat-label" href="https://github.com/rafiwho/Problem-Solving-Solutions">Problems solved &#8599;</a>
                     </div>
                     <div class="hero-stat">
-                        <span class="hero-stat-number">25+</span>
-                        <span class="hero-stat-label">Projects</span>
+                        <span class="hero-stat-number">Code</span>
+                        <a class="hero-stat-label" href="https://github.com/rafiwho?tab=repositories">Explore repositories &#8599;</a>
                     </div>
                     <div class="hero-stat hero-stat-icpc">
                         <div class="icpc-badge">ICPC</div>
                         <span class="hero-stat-number">ICPC</span>
-                        <span class="hero-stat-label">Regional Finalist</span>
+                        <span class="hero-stat-label">Regional Finalist · 2024</span>
                     </div>
                 </div>
             </div>
@@ -107,106 +108,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Technologies I work with</p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Languages</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">C++</span>
-                            <span class="skill-level">Expert</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Go</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-level">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Backend & Databases</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">RabbitMQ</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js</span>
-                            <span class="skill-level">Intermediate</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MongoDB</span>
-                            <span class="skill-level">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Tools & DevOps</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Docker</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Git</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Linux</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Prometheus</span>
-                            <span class="skill-level">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Specializations</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Data Structures</span>
-                            <span class="skill-level">Expert</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Algorithms</span>
-                            <span class="skill-level">Expert</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Microservices</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">System Design</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -222,20 +123,25 @@
                         <h3 class="project-title">JudgeNot0</h3>
                     </div>
                     <p class="project-description">
-                        A distributed online judge platform built with microservices architecture. 
+                        A distributed online judge platform built with microservices architecture.
                         Contributed to backend engine and server components using Go.
                         Handles multi-language code execution with RabbitMQ-based message queuing.
                     </p>
+                    <div class="case-study">
+                        <div><h4>My contribution</h4><p>Contributed to the Go backend engine and server components responsible for processing code submissions.</p></div>
+                        <div><h4>The engineering problem</h4><p>Multi-language code execution needs coordination between the server and execution workers. The platform uses RabbitMQ message queues within a microservices architecture.</p></div>
+                        <div><h4>Core technologies</h4><p>Go services, RabbitMQ message queuing, PostgreSQL persistence, and a Next.js frontend.</p></div>
+                    </div>
                     <div class="project-tech">
 
                         <span>PostgreSQL</span>
                         <span>RabbitMQ</span>
-                        <span>Nextjs</span>
-                        <span>Golang</span>
+                        <span>Next.js</span>
+                        <span>Go</span>
                         <span>C</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://judgenot0.com" target="_blank" class="project-link">
+                        <a href="https://judgenot0.com" target="_blank" rel="noopener noreferrer" class="project-link">
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
@@ -258,7 +164,7 @@
                         <span>Algorithms</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/rafiwho/Problem-Solving-Solutions" target="_blank" class="project-link">
+                        <a href="https://github.com/rafiwho/Problem-Solving-Solutions" target="_blank" rel="noopener noreferrer" class="project-link">
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
@@ -281,7 +187,7 @@
                         <span>JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://halaaldrinkingwater.vercel.app/" target="_blank" class="project-link">
+                        <a href="https://halaaldrinkingwater.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
                             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM4.5 7.5a.5.5 0 0 1 0-1h5.793L8.146 4.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 7.5H4.5z"/>
                             </svg>
@@ -289,6 +195,106 @@
                         </a>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <span class="skill-level">Competitive programming</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Go</span>
+                            <span class="skill-level">Backend engine & server</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Algorithmic solutions</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">Web projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend & Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-level">Relational persistence</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RabbitMQ</span>
+                            <span class="skill-level">Message queuing</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level">Backend development</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">Document databases</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & DevOps</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-level">Containers</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-level">Version control</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <span class="skill-level">Development environment</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Prometheus</span>
+                            <span class="skill-level">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Specializations</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Data Structures</span>
+                            <span class="skill-level">3,000+ problems solved</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Algorithms</span>
+                            <span class="skill-level">Competitive programming</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Microservices</span>
+                            <span class="skill-level">JudgeNot0</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">System Design</span>
+                            <span class="skill-level">Distributed systems</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -308,15 +314,15 @@
                 </div>
                 <div class="contact-item">
                     <h3>GitHub</h3>
-                    <a href="https://github.com/rafiwho" target="_blank">github.com/rafiwho</a>
+                    <a href="https://github.com/rafiwho" target="_blank" rel="noopener noreferrer">github.com/rafiwho</a>
                 </div>
                 <div class="contact-item">
                     <h3>LinkedIn</h3>
-                    <a href="https://linkedin.com/in/rafiwho" target="_blank">linkedin.com/in/rafiwho</a>
+                    <a href="https://www.linkedin.com/in/md-uodoy-hossan-rafi-346a9b1a0/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
                 </div>
                 <div class="contact-item">
                     <h3>Facebook</h3>
-                    <a href="https://facebook.com/notrafiwho" target="_blank">facebook.com/notrafiwho</a>
+                    <a href="https://facebook.com/notrafiwho" target="_blank" rel="noopener noreferrer">facebook.com/notrafiwho</a>
                 </div>
             </div>
         </div>
@@ -325,7 +331,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Md. Uodoy Hossan Rafi. All rights reserved.</p>
+            <p>&copy; <span id="copyright-year">2026</span> Md. Uodoy Hossan Rafi. All rights reserved.</p>
         </div>
     </footer>
 
@@ -337,20 +343,11 @@
   const toggle = qs('.nav-toggle');
   const menu = qs('.nav-menu');
   if (toggle && menu) {
-    toggle.addEventListener('click', () => menu.classList.toggle('active'));
-    qsa('.nav-item').forEach((item) => item.addEventListener('click', () => menu.classList.remove('active')));
+    const closeMenu = () => { menu.classList.remove('active'); toggle.setAttribute('aria-expanded', 'false'); };
+    toggle.addEventListener('click', () => { const open = menu.classList.toggle('active'); toggle.setAttribute('aria-expanded', String(open)); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu.classList.contains('active')) { closeMenu(); toggle.focus(); } });
+    qsa('.nav-item').forEach((item) => item.addEventListener('click', closeMenu));
   }
-
-  qsa('a[href^="#"]').forEach((a) => {
-    a.addEventListener('click', (e) => {
-      const href = a.getAttribute('href');
-      if (!href || href.length < 2) return;
-      const target = qs(href);
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
 
   const typeWriter = (el, text, speed=50) => new Promise((resolve) => {
     let i = 0;
@@ -396,8 +393,9 @@
     await typeWriter(cmd3, 'git status', 70);
   };
 
+  document.getElementById('copyright-year').textContent = new Date().getFullYear();
   const start = () => {
-    if (document.getElementById('cmd1')) runTerminal();
+    if (document.getElementById('cmd1') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) runTerminal();
   };
 
   if (document.readyState === 'loading') {

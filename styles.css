@@ -788,3 +788,42 @@ a:hover {
 @keyframes tcmd2{ to{ width:9ch; } }
 @keyframes tcmd3{ to{ width:10ch; } }
 @keyframes tout{ to{ opacity:1; } }
+
+/* Readability, compact mobile layout, and keyboard access. */
+:root { --text-muted: #a0a0a0; }
+.hero .container > * { min-width: 0; }
+.hero-actions { flex-wrap: wrap; align-items: center; margin-bottom: 2.5rem; }
+.hero-contact { padding: .75rem 0; }
+.hero-btn-primary, .hero-btn-primary:hover { color: #16100d; }
+.hero-stat-label { line-height: 1.5; }
+.case-study { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding: 1.5rem 0; margin-bottom: 1.5rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.case-study h4 { margin-bottom: .625rem; font-size: 1rem; }
+.case-study p { color: var(--text-secondary); font-size: .9375rem; }
+.skills-grid { gap: 1.5rem; }
+.skill-item { gap: 1rem; }
+.skill-level { text-align: right; font-family: var(--font-sans); }
+.section-header { margin-bottom: 2.5rem; }
+.contact-item { min-width: 0; }
+.contact-item a { overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--success); outline-offset: 5px; }
+@media (min-width: 1025px) { .hero .container { grid-template-columns: 1.2fr 1fr; gap: 3rem; } }
+@media (max-width: 1024px) { .case-study { grid-template-columns: 1fr; } }
+@media (max-width: 768px) {
+  .hero { min-height: auto; }
+  .hero-main { font-size: clamp(2.25rem, 7vw, 3rem); }
+  .hero-stats { gap: 1.5rem; }
+  .hero-actions { gap: .75rem; align-items: stretch; }
+  .hero-btn, .hero-contact { text-align: center; }
+  .skills, .projects, .contact { padding: 3.5rem 0; }
+  .skill-category, .project-card, .contact-item { padding: 1.5rem; }
+  .skill-item { padding: .5rem 0; }
+  .project-header { flex-wrap: wrap; }
+  .nav-menu { visibility: hidden; }
+  .nav-menu.active { visibility: visible; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .terminal-cmd { width: auto; }
+  .terminal-out { opacity: 1; }
+}
